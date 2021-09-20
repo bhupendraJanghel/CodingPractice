@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Armstrong {
 	
-	public static void checkArmstrong(int num) {
+	private static void checkArmstrong(int num) {
 		int rem,result=0;
 		int temp=num;
 		
