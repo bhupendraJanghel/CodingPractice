@@ -2,7 +2,7 @@ package com.practice.basic;
 
 public class SecondLargest {
 
-	public static void secondLargest(int[] ar) {
+	public static int secondLargest(int[] ar) {
 
 		int largest = Integer.MIN_VALUE;
 		int secondLargest = Integer.MIN_VALUE;
@@ -16,14 +16,18 @@ public class SecondLargest {
 			} else if (ar[i] > secondLargest && ar[i] != largest)
 				secondLargest = ar[i];
 		}
-		System.out.println("Second Largest value :" + secondLargest);
+		if(secondLargest<0) {
+			return -1;
+		}
+		else
+			return secondLargest;
 	}
 
 	public static void main(String[] args) {
 
-		int arr[] = { 12, 3, 53, 35, 5, 43, -32, 4, 2, 420, 3, 435 };
+		int arr[] = {2,1,2};
 
-		secondLargest(arr);
+		System.out.println(secondLargest(arr));
 
 	}
 
