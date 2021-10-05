@@ -4,29 +4,17 @@ public class demo {
 
 	public static void main(String[] args) {
 
-		int nums[] = new int[] { 3,2,2,3};
-		
-//		
-//		    int i = 0;
-//		    for (int j = 1; j < nums.length; j++) {
-//		        if (nums[j] != nums[i]) {
-//		            i++;
-//		            nums[i] = nums[j];
-//		        }
-//		    }
-
-		int val=3;
-		int j=0;
-        for(int i=0;i<nums.length;i++){
-            if(val!=nums[i]){
-               
-                nums[j]=nums[i];
-                ++j;
-            }
+		int a[]=new int[] {1,2,3,4,5};
+		int n=a.length;
+		int tmp= a[n-1];
+        for(int i=n-1;i>0;i--){
+            a[i]=a[i-1];
+            
         }
-		for (int k = 0; k < nums.length; k++) {
-			System.out.println(nums[k]);
-		}
+        a[0]=tmp;
+        
+        for(int j=0;j<a.length;j++){
+            System.out.print(a[j]);
+        }
 	}
-
 }

@@ -24,6 +24,9 @@ public class IntermediateOperation {
 		
 		System.out.print("\nSkip the list : ");
 		list.stream().skip(5).forEach(System.out::print);
+		
+		System.out.println("\nSorted List : ");
+		list.stream().sorted((x,y)-> y.compareTo(x)).forEach(System.out::print);
 	}
 
 }

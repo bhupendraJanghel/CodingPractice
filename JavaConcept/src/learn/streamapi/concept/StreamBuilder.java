@@ -1,5 +1,6 @@
 package learn.streamapi.concept;
 
+import java.util.Arrays;
 import java.util.Random;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
@@ -23,7 +24,9 @@ public class StreamBuilder {
 		
 		Stream<String> streams = Stream.of("A$B$C".split("\\$"));
         streams.forEach(p -> System.out.println(p));
-	
+        
+        int ar[]=new int[] {1,2,3};
+       IntStream arr= Arrays.stream(ar);
 	}
 
 }
