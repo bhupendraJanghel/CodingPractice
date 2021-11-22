@@ -33,7 +33,7 @@ public class FunctionInterfaceTypeDemo {
 
 	public static void main(String[] args) {
 
-		// 1. Predicate - boolean reuslt
+		// 1. Predicate - boolean result
 		Predicate<String> checkLength = str -> str.length() > 5;
 
 		System.out.println(checkLength.test("bhupendra")); // return true, if length is greater than 5
@@ -61,7 +61,7 @@ public class FunctionInterfaceTypeDemo {
 		Supplier<Double> getRandomDouble = () -> Math.random();
 		System.out.println(getRandomDouble.get());
 
-		// --------------------------Bi-xyz functional inteerface------------------------------------------------------------------
+		// --------------------------Bi-xyz functional interface------------------------------------------------------------------
 
 		//Bipredicate 
 		BiPredicate<Integer, Integer> checkSumOfTwo = (a, b) -> a + b > 5;
@@ -85,9 +85,9 @@ public class FunctionInterfaceTypeDemo {
 	
 		Predicate<String> checkStrLength = (s)->s.length()>=5;
 		Predicate<String> checkEvenLength = (s) -> s.length()%2 == 0;
-		System.out.println(checkLength.and(checkEvenLength).test("Bhupendra"));
-		System.out.println(checkLength.or(checkEvenLength).test("Bhupendra"));
-		System.out.println(checkLength.negate().test("Bhupendra"));
+		System.out.println(checkStrLength.and(checkEvenLength).test("Bhupendra"));
+		System.out.println(checkStrLength.or(checkEvenLength).test("Bhupendra"));
+		System.out.println(checkStrLength.negate().test("Bhupendra"));
 		
 		
 		//---------------------------------Function Chaining------------------------------------------------------------------------------------

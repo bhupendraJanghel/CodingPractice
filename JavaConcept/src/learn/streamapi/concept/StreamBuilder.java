@@ -27,6 +27,7 @@ public class StreamBuilder {
         
         int ar[]=new int[] {1,2,3};
        IntStream arr= Arrays.stream(ar);
+       
 	}
 
 }

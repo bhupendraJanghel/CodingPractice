@@ -1,4 +1,4 @@
-package learn.Java8.feature;
+ package learn.Java8.feature;
 
 class Test {
 	public static void testFun() {

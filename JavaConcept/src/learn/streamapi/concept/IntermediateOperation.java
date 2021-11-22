@@ -2,7 +2,7 @@ package learn.streamapi.concept;
 
 import java.util.List;
 
-//Operation which returns another stream  as a result are called Intermediat operations.
+//Operation which returns another stream  as a result are called Intermediate operations.
 
 //E.g : filter(), map(), distinct(), sorted(), limit(), skip(), peek()
 
